@@ -3,6 +3,21 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "css/styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "js/scripts.js",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
+
