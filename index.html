@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            class="logo"
+            src="/Images/I_want_a_logo_for_my_portfolio_website_logo_name-PhotoRoom.png-PhotoRoom (1).png"
+            alt="Logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contect</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Mukund</span><br />Chourasia From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------- About -------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="/Images/Picsart_24-01-25_16-19-13-748 (1).jpg"
+              alt="My Image"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Hello! I'm Mukund, a passionate Full Stack Web Developer with a knack for creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I strive to build seamless and efficient user experiences.
+            </p>
+
+            <div class="tab-title">
+              <div class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </div>
+              <div class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </div>
+              <div class="tab-links" onclick="opentab('Education')">
+                Education
+              </div>
+            </div>
+
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>Front-end Developer</span><br />Creating Web/App Interfaces</li>
+                <li><span>Full Stack Development</span><br />Web Developer</li>
+                <li>
+                  <span>Languges & Technologys I Know</span><br />
+                  Html, Css, Bootstrap,JavaScript, <br />
+                  Mongo DB, Express.js React.js, Node.js
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>Current</span><br />Fresher</li>
+                <li>
+                  <span>Projects I Did</span><br />E-commerce Web App, Food Delivery Web App, Wheather App, etc
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2023</span><br />Full Stack Development Cource of 6
+                  Months From Internshala
+                </li>
+                <li>
+                  <span>2024</span><br />BCom From Sksits Devi Ahilya Vishwa Vidhyalay
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------Services-------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2 class="service-title">Full Stack Development</h2>
+            <p>
+              As a skilled Full Stack Web Developer, I offer comprehensive development services that cover both front-end and back-end aspects of web applications. Leveraging the latest technologies and best practices, I deliver robust and scalable solutions tailored to meet your business needs.
+            </p>
+            <a href="#contact">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2 class="service-title">Frontend</h2>
+            <p>
+              I specialize in creating intuitive and engaging user interfaces using modern front-end technologies such as HTML, CSS, JavaScript, React, and Angular. My focus is on ensuring a seamless user experience (UX) that not only looks great but also provides easy navigation and responsiveness across all devices.
+            </p>
+            <a href="#contact">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-network-wired"></i>
+            <h2 class="service-title">Backend</h2>
+            <p>
+              On the back-end, I utilize powerful frameworks like Node.js and Express to build efficient server-side applications. I have extensive experience in managing databases using MongoDB, ensuring that your data is handled securely and efficiently. My back-end solutions are designed to support complex functionalities and high performance.
+            </p>
+            <a href="#contact">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------- Portfolio ---------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img class="img-work"
+              src="/Images/Colorful Mascot Illustrative Online Shop Logo.jpg"
+              alt=""
+            />
+            <div class="layer">
+              <h2>E-Commerce Web App</h2>
+              <p>I Just made E-commerce Web Aap With full functionalty</p>
+              <a href="https://github.com/MukundChourasia/ecommerce" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img class="img-work"
+              src="/Images/Green and Yellow Illustrative Delivery Logo.png"
+              alt=""
+            />
+            <div class="layer">
+              <h2>Food Delivery Web App</h2>
+              <p>I Just made Food Delivery Web App With full functionalty</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="/Images/129011256-young-indian-man-listening-music-with-headphones (1).jpg"
+              alt=""
+            />
+            <div class="layer">
+              <h2>Spotify Clone Web App</h2>
+              <p>I Just made the clone of Spotify With full functionalty</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!---------------------contact--------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>Commnpara38@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>6265282821</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAEUFyy4Bl5lbycAKyU_wLm-FIarWClItq5s&keywords=mukund%20chourasia&origin=RICH_QUERY_SUGGESTION&position=0&searchId=4b5dc8b2-3faa-48c2-8107-3d108c770200&sid=2sp&spellCorrectionEnabled=false"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/mukund_hai/" target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="https://github.com/MukundChourasia"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="#" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder=" Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright © Mukund. Made With Easy Tutorials</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
