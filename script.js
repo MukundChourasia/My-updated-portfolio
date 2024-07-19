@@ -24,6 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function closemenu() {
       sidemenu.style.right = "-200px";
     }
+
+const proxyUrl = 'https://cors-anywhere.vercel.com/';
+const targetUrl = 'https://script.google.com/macros/s/AKfycbxXUHb8Fi5t6V84QdXWmfwnPnwpupbzdaBPxLlN5nnkbIVKWXhghW1C4IcNqjBkt-kSMQ/exec'; // Replace this with API URL
+
+fetch(proxyUrl + targetUrl)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbxXUHb8Fi5t6V84QdXWmfwnPnwpupbzdaBPxLlN5nnkbIVKWXhghW1C4IcNqjBkt-kSMQ/exec";
     const form = document.forms["submit-to-google-sheet"];
