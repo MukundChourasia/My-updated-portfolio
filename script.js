@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
       sidemenu.style.right = "-200px";
     }
 
-const proxyUrl = 'https://cors-anywhere.vercel.com/';
+const proxyUrl = 'https://my-updated-portfolio-delta.vercel.app//';
 const targetUrl = 'https://script.google.com/macros/s/AKfycbxXUHb8Fi5t6V84QdXWmfwnPnwpupbzdaBPxLlN5nnkbIVKWXhghW1C4IcNqjBkt-kSMQ/exec'; // Replace this with API URL
 
 fetch(proxyUrl + targetUrl)
